@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project | Frontend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="modal-bg">
+            <div class="cart-modal">
+                <div class="cart-details">
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>S/N</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody id="cart-list">
+                          <!-- <tr>
+                            <td>1</td>
+                            <td>Air Pod</td>
+                            <td>400</td>
+                            <td class="qty-btn">
+                                <button type="button" data-id="${product.id}"> - </button>
+                                <span id="qty"></span>
+                                <button type="button" data-id="${product.id}"> + </button>
+                            </td>
+                            <td><button type="button" class="remove-btn">Remove</button></td>
+                          </tr>
+                          -->
+                        </tbody>
+                    </table>
+                    <form action="" class="form">
+                        <div class="input">
+                            <p style="text-align: center;">
+                                <input type="text" placeholder="Your Name" class="name">
+                                <span id="name"></span>
+                            </p>
+                        </div>
+                        <div class="input">
+                            <p style="text-align: center;">
+                                <input type="email" placeholder="Your Email" class="email">
+                                <span id="email"></span>
+                            </p>
+                        </div>
+                        <div class="input">
+                            <p style="text-align: center;">
+                                <input type="text" placeholder="Your Phone Number" class="number">
+                                <span id="number"></span>
+                            </p>
+                        </div>
+                    </form>
+                    <div class="summary-actions">
+                        <h3>Total Amount to be Paid</h3>
+                        <h2>&#8358;<span id="total-price">0</span></h2>
+                    </div>
+                    <div class="next-btn">
+                        <button type="button" id="continue">Continue Shopping</button>
+                        <button type="button" id="pay">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="modal-bm">
+            <div class="cart-modal">
+                <div class="recap-details">
+                    <div class="order-details">
+                        <p>Thank You, <span id="cus-name">Favour</span>, Your Order Has been Received</p>
+                        <img src="images/check.svg" alt="check">
+                        <p>Summary</p>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>S/N</th>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody class="orders-summary">
+                            <tr>
+                                <td>1</td>
+                                <td>Apple watch</td>
+                                <td>1</td>
+                            </tr>   
+                        </table>
+                    </div>
+                    <button type="button" id="ok">OK</button>
+                </div>
+            </div>
+        </div>
+       <div class="intro-wrapper">
+        <div class="intro-section" id="intro">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#intro"><img src="images/EMS.svg" alt="EMS-LOGO"></a>
+                </div>
+                <ul>
+                  <li><h2><a href="#intro">Intro</a></h2></li>
+                  <li><h2><a href="#about">About</a></h2></li>
+                  <li><h2><a href="#shop">Shop</a></h2></li>
+                </ul>
+                <div class="cart">
+                    <img src="images/cart.svg" alt="cart">
+                    <span id="num">0</span>
+                </div>
+            </div>
+            <div class="hero-section">
+                <h1>THE E-<br>MILLENIAL<br> STORE</h1>
+                <img src="images/heroImage.png" alt="heroImage">
+            </div>
+            <a href="#shop" class="myshop"><div class="shop"><h3>SHOP NOW</h3></div></a>
+        </div>
+       </div>
+        
+        <div class="about" id="about">
+            <div>
+                <p>E-Millenial Store is an hypothetical online store for 
+                    gadgets we believe every 'Millenial' or 'Gen Z' should have today. 
+                    We've got mobile phones, laptops, smartwatches and other gadgets. 
+                    Explore all our gadgets and choose the once that suit you.  
+                </p>
+            </div>
+        </div>
+
+        <div class="gadgets" id="shop">
+            <h1>OUR GADGETS</h1>
+            <div class="products" id="products">
+               
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-items">
+                <p class="footer-logo">EMS</p>
+                <div class="designer">
+                    <p>Designed and Crafted by Favour Dgreat</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+<script src="cart2.js"></script>
+</html>
