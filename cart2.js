@@ -368,10 +368,10 @@ function setPhone(){
     return document.querySelector('.number');
 }
 
-//Paystack Function to hzndle Payment
+//Paystack Function to handle Payment
 function payWithPaystack() {
   let handler = PaystackPop.setup({
-    key: 'pk_test_bebb7f2304810763defe6e4c769f7e5b0cd80a04', // Replace with your public key
+    key: 'pk_test_0748efb053b3d4203c1c094168e30efa726d00f1', // Replace with your public key
     // email: document.getElementById("email-address").value,
     // amount: document.getElementById("amount").value * 100,
     email: cemail,
